@@ -1,5 +1,6 @@
 # fix PATH before all
 export PATH=/usr/local/bin:${PATH%:/usr/local/bin}
+export PATH="/usr/local/sbin:$PATH"
 
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
@@ -19,3 +20,12 @@ for file in $DOTFILES/**/*.bash
 do
   source "$file"
 done
+
+export NVM_DIR="/Users/arkadiybutermanov/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
+export RAILS_NO_DEBUG_ASSETS=1
+
+export GPG_TTY=$(tty)
+
+export PATH="$HOME/.yarn/bin:$PATH"

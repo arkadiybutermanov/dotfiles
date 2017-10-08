@@ -5,3 +5,8 @@
 db/*.sqlite3.backup
 vendor/bundle
 .fs.yml
+tags
+.tags_swap
+.bundle
+*.dump
+.tags

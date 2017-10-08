@@ -5,7 +5,9 @@ bind '"\e[B": history-search-forward'
 
 export ARCHFLAGS='-arch x86_64'
 
-export LC_CTYPE=ru_RU.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 export VISUAL="atom --wait"
 export EDITOR="$VISUAL"
