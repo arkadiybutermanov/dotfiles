@@ -48,7 +48,7 @@ setup_brewfile() {
   then
     info 'setup Brewfile from example'
     cp brew/Brewfile.symlink.example brew/Brewfile.symlink
-    success 'gitconfig'
+    success 'brewfile'
   fi
 }
 
