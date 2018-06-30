@@ -9,9 +9,8 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-export VISUAL="atom --wait"
-export EDITOR="$VISUAL"
-export REACT_EDITOR="$VISUAL"
+export EDITOR="subl --wait"
+export REACT_EDITOR="subl"
 export LESS="FRX"
 export RI="--format ansi -T"
 
