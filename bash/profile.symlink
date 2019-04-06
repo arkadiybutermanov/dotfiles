@@ -6,13 +6,18 @@ export PATH=/usr/local/sbin:${PATH%:/usr/local/sbin}
 export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `s<tab>` to
-export PROJECTS=~/src
+export PROJECTS=~/work
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
+fi
+
+if [[ -a ~/.zshrc ]]
+then
+  source ~/.zshrc
 fi
 
 # load the path files

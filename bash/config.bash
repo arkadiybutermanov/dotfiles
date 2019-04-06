@@ -1,5 +1,3 @@
-bind "set completion-ignore-case on"
-
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
@@ -9,8 +7,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-export EDITOR="subl --wait"
-export REACT_EDITOR="subl"
 export LESS="FRX"
 export RI="--format ansi -T"
 
@@ -27,10 +23,6 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="&:ls:[bf]g:exit"
 
 export GPG_TTY=$(tty)
-
-export ANDROID_HOME=/Volumes/Feynman/Arkadiy/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 shopt -s histappend
 shopt -s cmdhist
