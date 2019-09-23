@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-  git clone https://github.com/fs/dotfiles.git ~/.dotfiles
+  git clone https://github.com/arkadiybutermanov/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
   sh script/setup
 ```

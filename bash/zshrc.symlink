@@ -1,7 +1,32 @@
-export ZSH="/Users/arkadiy_butermanov/.oh-my-zsh"
+export ZSH="/Users/arkadiibutermanov/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-
-plugins=(git)
+plugins=(git command-not-found rails ruby osx)
 
 source $ZSH/oh-my-zsh.sh
+
+. /usr/local/etc/profile.d/z.sh
+
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
+# fix PATH before all
+export PATH=/usr/local/bin:${PATH%:/usr/local/bin}
+export PATH=/usr/local/sbin:${PATH%:/usr/local/sbin}
+
+# shortcut to this dotfiles path is $DOTFILES
+export DOTFILES=$HOME/.dotfiles
+
+# your project folder that we can `s<tab>` to
+export PROJECTS=~/work
+
+# load the path files
+for file in $DOTFILES/**/*.bash
+do
+  source "$file"
+done
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+zplug "changyuheng/fz", defer:1
+zplug "rupa/z", use:z.sh
