@@ -10,3 +10,6 @@ tags
 .bundle
 *.dump
 .tags
+notes
+TAGS
+.generators
