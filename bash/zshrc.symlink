@@ -26,7 +26,4 @@ do
   source "$file"
 done
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 zplug "changyuheng/fz", defer:1
-zplug "rupa/z", use:z.sh
